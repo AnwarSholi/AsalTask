@@ -1,0 +1,19 @@
+<!---
+<ul class="myNav element pan-x">
+  <span class="empty"></span>
+  <li class="myNav-item" *ngFor="let month of months">
+    <a class="myNav-link" href="#">{{month}}</a>
+  </li>
+  <span class="empty"></span>
+</ul>
+-->
+
+<div id="carouselExampleControls" class="carousel slide" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item" *ngFor="let month of months">
+      <h2>{{month}}</h2>
+      <app-chart [allMonths]="months" [thisMonth]="month" [allMonthesExpenses]="allMonthesExpenses"></app-chart>
+    </div>
+    
+  </div>
+</div>

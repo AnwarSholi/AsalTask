@@ -1,0 +1,14 @@
+div {
+    background-color: white !important;
+}
+canvas {
+    width: 100% !important;
+}
+button[state="menu"] {
+    display: none !important;
+    height: 0 !important;
+}
+.canvasjs-chart-container .canvasjs-chart-toolbar {
+    position: static !important;
+    color:red;
+}
