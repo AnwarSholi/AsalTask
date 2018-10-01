@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import * as $ from 'jquery';
 import * as CanvasJS from './canvasjs.min.js';
 //var CanvasJS = require('./canvasjs.js');
- 
+export var chart;
 @Component({
   selector: 'app-chart',
   templateUrl: './chart.component.html',
@@ -13,6 +13,7 @@ export class ChartComponent implements OnInit {
   @Input() allMonths:string[];
   @Input() thisMonth:string;
   @Input() allMonthesExpenses:Object;
+  
 	ngOnInit() {
     var myMonths=this.allMonths;
     var allMonthesExpensesJS = this.allMonthesExpenses;
@@ -23,11 +24,13 @@ export class ChartComponent implements OnInit {
     function onClick(e) {
       alert(  e.dataSeries.type + ", dataPoint { x:" + e.dataPoint.x + ", y: "+ e.dataPoint.y + " }" );
     }
+   
     window.onload = function(){
       for(i=0; i<myMonths.length; i++){
         let dataPoints = [];
         let dpsLength = 0;
-        let chart = new CanvasJS.Chart(myMonths[i],{
+        chart = new CanvasJS.Chart(myMonths[i],{
+          animationEnabled: true,
           height:145,
           axisX: {
             lineColor: "#D6D6DE",
@@ -70,7 +73,7 @@ export class ChartComponent implements OnInit {
               { x: 30, y: 1200}
               ],
           }
-        ],
+        ]
           
         });
 
@@ -78,21 +81,16 @@ export class ChartComponent implements OnInit {
         //eachMonth=allMonthesExpensesJS[key];
         //*****console.log(allMonthesExpensesJS[Object.keys(allMonthesExpensesJS)[0]]);
         //console.log(allMonthesExpensesJS);
-        $.getJSON("https://canvasjs.com/services/data/datapoints.php?xstart=1&ystart=25&length=20&type=json&callback=?", function(data) {  
-          $.each(data, function(key, value){
-            dataPoints.push({x: value[0], y: parseInt(value[1])});
-          });
+        //$.getJSON("https://canvasjs.com/services/data/datapoints.php?xstart=1&ystart=25&length=20&type=json&callback=?", function(data) {  
+        // $.each(data, function(key, value){
+        //   dataPoints.push({x: value[0], y: parseInt(value[1])});
+        // });
           dpsLength = dataPoints.length;
           chart.render();
-
           
-          //updateChart();
-        });
+        //});
       }
-      
-      
-  
-    }
+    }//onLoad Function
   }
   
 }

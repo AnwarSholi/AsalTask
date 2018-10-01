@@ -1,0 +1,27 @@
+$mainWidth: 100%;
+$eachOneWidth: $mainWidth/5;
+*{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+div{
+    background-color: white !important;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+ul li {
+    display: block;
+    float: left;
+    width: $eachOneWidth;
+    height: $eachOneWidth;
+    text-align: center;
+}
+ul li img {
+    border-radius: $mainWidth/2;
+    border: 0.2em solid whitesmoke/*#424C9A*/;
+    padding: 1em;
+}

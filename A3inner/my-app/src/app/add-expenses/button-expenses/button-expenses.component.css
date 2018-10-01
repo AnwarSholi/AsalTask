@@ -1,0 +1,17 @@
+/* line 1, button-expenses.component.scss */
+* {
+  font-size: 10px;
+}
+
+/* line 4, button-expenses.component.scss */
+nav button {
+  width: 100%;
+  padding: 1em;
+  font-size: 2em;
+  color: white;
+  background-color: #424C9A;
+  text-align: center;
+  border: 0;
+}
+
+/*# sourceMappingURL=button-expenses.component.css.map */

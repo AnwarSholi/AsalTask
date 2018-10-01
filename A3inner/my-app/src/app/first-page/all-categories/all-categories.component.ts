@@ -6,9 +6,10 @@ import { FirstPageService } from '../../service/first-page.service';
   styleUrls: ['./all-categories.component.css']
 })
 export class AllCategoriesComponent implements OnInit {
-  allIconCategories:string[];
+  
   allTitleCategories:string[];
   allExpenses:string[];
+  allIconCategories:string[];
   private service:FirstPageService = new FirstPageService(0);
   constructor() { }
 

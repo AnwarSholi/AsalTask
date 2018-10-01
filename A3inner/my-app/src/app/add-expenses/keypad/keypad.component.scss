@@ -1,0 +1,19 @@
+$mainWidth: 100%;
+
+*{
+    font-size: 10px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    display: block;
+    float: left;
+    width: $mainWidth/3;
+    border: 0.01em solid whitesmoke;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    color: gray;
+}

@@ -1,0 +1,17 @@
+/* line 2, input-expenses.component.scss */
+* {
+  font-size: 10px;
+}
+
+/* line 5, input-expenses.component.scss */
+input {
+  font-size: 3em;
+  width: 100%;
+  padding: 0.3em;
+  border: 0;
+  text-align: center;
+  background-color: white;
+  color: #424C9A;
+}
+
+/*# sourceMappingURL=input-expenses.component.css.map */

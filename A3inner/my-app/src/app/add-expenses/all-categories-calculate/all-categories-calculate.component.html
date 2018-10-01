@@ -1,3 +1,12 @@
-<p>
-  all-categories-calculate works!
-</p>
+<ul class="circleCategories">
+  <li *ngFor="let icon of allIconCategories; let i = index;">
+    <a>
+        <figure>
+          <img [src]="icon" alt="">
+          <figcaption>{{allTitleCategories[i]}}</figcaption>
+        </figure>
+    </a>
+  </li>
+</ul>
+<input type="text" hidden value="false" id="hiddenInput">
+<div class="clearfix"></div>

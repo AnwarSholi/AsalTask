@@ -1,0 +1,36 @@
+/* line 3, all-categories-calculate.component.scss */
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/* line 7, all-categories-calculate.component.scss */
+div {
+  background-color: white !important;
+}
+
+/* line 10, all-categories-calculate.component.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+/* line 16, all-categories-calculate.component.scss */
+ul li {
+  display: block;
+  float: left;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+}
+
+/* line 23, all-categories-calculate.component.scss */
+ul li img {
+  border-radius: 50%;
+  border: 0.2em solid whitesmoke;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=all-categories-calculate.component.css.map */
