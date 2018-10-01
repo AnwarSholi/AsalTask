@@ -28,19 +28,22 @@ export class ChartComponent implements OnInit {
         let dataPoints = [];
         let dpsLength = 0;
         let chart = new CanvasJS.Chart(myMonths[i],{
-          title:{
-            text:"Live Chart with Data-Points from External JSON"
-          },
+          height:150,
           axisX: {
             lineColor: "#D6D6DE",
-            lineThickness: 3
+            lineThickness: 3,
+            labelFontColor: "#D6D6DE"
           },
-          axisY: {		       
+          axisY: {
             gridDashType: "dash",
             gridThickness: 2,
             gridColor: "#D6D6DE",
             lineColor: "#D6D6DE",
-            lineThickness: 0
+            labelFontColor: "#D6D6DE",
+            lineThickness: 0,
+            labelFormatter: function(e){
+              return  "$"+ e.value;
+            }
           },
           data: [{
             type: "spline",
@@ -64,7 +67,7 @@ export class ChartComponent implements OnInit {
               { x: 24, y: 200},
               { x: 26, y: 100},
               { x: 28, y: 200},
-              { x: 30, y: 900}
+              { x: 30, y: 1200}
               ],
           }
         ],

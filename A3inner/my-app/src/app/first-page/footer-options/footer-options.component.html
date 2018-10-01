@@ -1,3 +1,7 @@
-<p>
-  footer-options works!
-</p>
+<nav class="bottom-nav fixed-bottom">
+  <ul>
+    <li *ngFor="let icon of allImages">
+      <img [src]="icon" alt="icon">
+    </li>
+  </ul>
+</nav>

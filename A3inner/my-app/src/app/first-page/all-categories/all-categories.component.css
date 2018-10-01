@@ -1,0 +1,51 @@
+/* line 1, all-categories.component.scss */
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* line 5, all-categories.component.scss */
+div {
+  background-color: white !important;
+}
+
+/* line 8, all-categories.component.scss */
+div.allCategories {
+  padding: 0.9em;
+}
+
+/* line 11, all-categories.component.scss */
+div img {
+  width: 10%;
+}
+
+/* line 15, all-categories.component.scss */
+div .description {
+  width: 80%;
+}
+
+/* line 18, all-categories.component.scss */
+div .description h5 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* line 23, all-categories.component.scss */
+div .description h5,
+div .description p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* line 28, all-categories.component.scss */
+div span {
+  width: 10%;
+}
+
+/* line 31, all-categories.component.scss */
+.one-line {
+  display: block;
+  float: left;
+}
+
+/*# sourceMappingURL=all-categories.component.css.map */

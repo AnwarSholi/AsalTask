@@ -31,6 +31,42 @@ export class FirstPageService {
   }//getTotalExpenses Function
   /********************************************** End Get Total Expenses */
   /********************************************** Start Get All Months and Each Month Expenses As Object */
+  getAllIcons():string[]{
+    return [
+      "assets/images/chart.png",
+      "assets/images/circleChart.png",
+      "assets/images/plus.png",
+      "assets/images/wallet.png",
+      "assets/images/setting.png"
+    ];
+  }
+  getAllIconCategories():string[]{
+    return [
+      "assets/images/shopping.png",
+      "assets/images/alcohol.png",
+      "assets/images/fastfood.png",
+      "assets/images/bills.png",
+      "assets/images/clothes.png"
+    ];
+  }
+  getAllTitleCategories():string[]{
+    return [
+      "Shopping",
+      "Alcohol",
+      "FastFood",
+      "Bills",
+      "Clothes"
+    ];
+  }
+  getAllExpenses():string[]{
+    return [
+      "$100",
+      "$200",
+      "$500",
+      "$100",
+      "$100"
+    ];
+  }
   getAllMonthsExpenses(){
     return {
       Jan:[

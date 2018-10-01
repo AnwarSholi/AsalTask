@@ -1,0 +1,57 @@
+/* line 7, footer-options.component.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, footer-options.component.scss */
+.bottom-nav {
+  background-color: white;
+  height: 40px;
+  box-shadow: 1px 1px 15px 1px whitesmoke, 1px 1px 15px 1px whitesmoke, 1px 1px 15px 1px whitesmoke, 1px 1px 15px 1px whitesmoke;
+}
+
+/* line 15, footer-options.component.scss */
+ul {
+  list-style-type: none;
+  height: 40px;
+  padding: 0;
+  margin-top: -24px;
+}
+
+/* line 21, footer-options.component.scss */
+ul li {
+  display: inline-block;
+  line-height: 20px;
+  width: 20%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 29, footer-options.component.scss */
+ul li img {
+  width: 20px;
+  height: 20px;
+  color: gray;
+}
+
+/* line 34, footer-options.component.scss */
+ul li:nth-child(3) {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+/* line 40, footer-options.component.scss */
+ul li:nth-child(3) img {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  border: 0.3em solid white;
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 -5px 15px -5px whitesmoke, 0 -5px 15px -5px whitesmoke, 0 -5px 15px -5px whitesmoke, 0 -5px 15px -5px whitesmoke;
+}
+
+/*# sourceMappingURL=footer-options.component.css.map */

@@ -11,9 +11,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
     <div class="carousel-item" *ngFor="let month of months">
-      <h2>{{month}}</h2>
+      <h5>{{month}}</h5>
+      <app-total-expenses></app-total-expenses>
       <app-chart [allMonths]="months" [thisMonth]="month" [allMonthesExpenses]="allMonthesExpenses"></app-chart>
     </div>
     
   </div>
+</div>
+<div class="gray-empty-div">
+
 </div>

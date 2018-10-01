@@ -1,3 +1,10 @@
-<p>
-  all-categories works!
-</p>
+
+<div class="allCategories" *ngFor="let eachIcon of allIconCategories; let i = index;">
+  <img class="one-line" [src]="eachIcon" alt="">
+  <div class="one-line description">
+    <h5>{{allTitleCategories[i]}}</h5>
+    <p>14% of expenses</p>
+  </div>
+  <span class="one-line each-expense">{{allExpenses[i]}}</span>
+  <div class="clearfix"></div>
+</div>

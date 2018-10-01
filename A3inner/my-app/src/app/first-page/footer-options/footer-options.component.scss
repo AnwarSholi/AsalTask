@@ -1,0 +1,49 @@
+$mainWidth: 100%;
+$lineHeight: 20px;
+$plusButton: 48px;
+$outVar: 24px;
+$shadow: 1px 1px 15px 1px whitesmoke;
+$shadow2:0 -5px 15px -5px whitesmoke;
+*{
+    box-sizing: border-box;
+}
+.bottom-nav {
+    background-color: white;
+    height: 2*$lineHeight;
+    box-shadow: $shadow, $shadow, $shadow, $shadow;
+}
+ul {
+    list-style-type: none;
+    height: 2*$lineHeight;
+    padding: 0;
+    margin-top: -1*$outVar;
+}
+ul li {
+    display: inline-block;
+    line-height: $lineHeight;
+    width: $mainWidth/5;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul li img {
+    width: $lineHeight;
+    height: $lineHeight;
+    color: gray;
+}
+ul li:nth-child(3){
+    position: relative;
+    width: $plusButton;
+    height: $plusButton;
+   
+}
+ul li:nth-child(3) img {
+    position: absolute;
+    left: 0;
+    top: $outVar/2;
+    border: 0.3em solid white;
+    border-radius: $plusButton/2;
+    width: $plusButton;
+    height: $plusButton;
+    box-shadow: $shadow2, $shadow2, $shadow2, $shadow2;
+}

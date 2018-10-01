@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+div {
+    background-color: white !important;
+}
+div.allCategories {
+    padding: 0.9em;
+}
+div img {
+    width: 10%;
+
+}
+div .description {
+    width: 80%;
+}
+div .description h5 {
+
+    font-size: 1.5em;
+    font-weight: bold;
+}
+div .description h5,
+div .description p{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+div span {
+    width: 10%;
+}
+.one-line {
+    display: block;
+    float: left;
+
+}
