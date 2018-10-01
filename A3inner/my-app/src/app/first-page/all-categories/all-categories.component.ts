@@ -6,17 +6,19 @@ import { FirstPageService } from '../../service/first-page.service';
   styleUrls: ['./all-categories.component.css']
 })
 export class AllCategoriesComponent implements OnInit {
-  
+  expense:string;
   allTitleCategories:string[];
   allExpenses:string[];
   allIconCategories:string[];
-  private service:FirstPageService = new FirstPageService(0);
-  constructor() { }
-
+  
+  constructor(private service:FirstPageService) { }
+  
   ngOnInit() {
+    this.service.cast.subscribe(expense=>this.expense=expense);
     this.allIconCategories=this.service.getAllIconCategories();
     this.allTitleCategories=this.service.getAllTitleCategories();
     this.allExpenses= this.service.getAllExpenses();
+
   }
 
 }

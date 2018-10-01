@@ -13,7 +13,7 @@ export class TitleCloseComponent implements OnInit {
     $(document).ready(function(){
       $('#close').on('click',function(){
         console.log("hey");
-        location.reload();
+        //location.reload();
       });
     });
   }

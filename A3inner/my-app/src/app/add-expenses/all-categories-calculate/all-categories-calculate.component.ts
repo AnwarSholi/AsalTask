@@ -8,14 +8,14 @@ import { FirstPageService } from '../../service/first-page.service';
 export class AllCategoriesCalculateComponent implements OnInit {
   allIconCategories:string[];
   allTitleCategories:string[];
-  private service:FirstPageService = new FirstPageService(0);
+  private service:FirstPageService = new FirstPageService();
   constructor() { }
 
   ngOnInit() {
     this.allIconCategories=this.service.getAllIconCategories();
     this.allTitleCategories=this.service.getAllTitleCategories();
     $(document).ready(function(){
-      $('li').on('click','img', function($event){
+      $('li').on('click','img', function(event){
         $('img').css({
             'border': '0.2em solid whitesmoke'
           }
@@ -26,6 +26,7 @@ export class AllCategoriesCalculateComponent implements OnInit {
           }
         );
         $('#hiddenInput').val("true");
+        $('#hiddenInputSelectedValue').val(event.target.getAttribute('class'));
       });
     });
   }

@@ -12,11 +12,9 @@ export var chart;
 export class ChartComponent implements OnInit {
   @Input() allMonths:string[];
   @Input() thisMonth:string;
-  @Input() allMonthesExpenses:Object;
   
 	ngOnInit() {
     var myMonths=this.allMonths;
-    var allMonthesExpensesJS = this.allMonthesExpenses;
     
     var i=0, j=0;
     var key;

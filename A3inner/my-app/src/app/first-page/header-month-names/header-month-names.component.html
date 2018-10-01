@@ -13,7 +13,7 @@
     <div class="carousel-item" *ngFor="let month of months">
       <h5>{{month}}</h5>
       <app-total-expenses></app-total-expenses>
-      <app-chart [allMonths]="months" [thisMonth]="month" [allMonthesExpenses]="allMonthesExpenses"></app-chart>
+      <app-chart [allMonths]="months" [thisMonth]="month"></app-chart>
     </div>
     
   </div>

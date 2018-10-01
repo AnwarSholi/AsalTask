@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+
 import { AllCategoriesComponent } from './first-page/all-categories/all-categories.component';
 import { ChartComponent } from './first-page/chart/chart.component';
 import { EachCategoryComponent } from './first-page/each-category/each-category.component';
@@ -46,7 +48,8 @@ const appRoutes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [FirstPageService],
   bootstrap: [AppComponent]

@@ -13,7 +13,7 @@ export class KeypadComponent implements OnInit {
     var amount="$";
     var tempAmount;
     $(document).ready(function(){
-     
+      $('#expensesInput').val(amount+"0");
       $('#keypad').on('click',':not("#x, #comma")', function(e){
         if($('#hiddenInput').val()==="true"){
           amount+=e.target.textContent.trim();

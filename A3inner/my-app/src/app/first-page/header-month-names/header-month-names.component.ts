@@ -8,14 +8,14 @@ import { FirstPageService, Months } from '../../service/first-page.service';
 export class HeaderMonthNamesComponent implements OnInit {
 
   months:string[];
-  allMonthesExpenses:Object;
-  private service:FirstPageService = new FirstPageService(0);
+ 
+  private service:FirstPageService = new FirstPageService();
   constructor() { }
   ngOnInit() {
     var ts;
     var monthIndex;
     this.months=this.service.getMonths();
-    this.allMonthesExpenses = this.service.getAllMonthsExpenses();
+    
     //console.log(Object.keys(this.allMonthesExpenses));
     //console.log("hey ");
     

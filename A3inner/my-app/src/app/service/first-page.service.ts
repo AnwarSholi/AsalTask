@@ -9,8 +9,13 @@ export enum Months {
 })
 export class FirstPageService {
   
-  constructor(private totalExpenses:number) { 
+  private expense = new BehaviorSubject<string>('hello');
+  cast = this.expense.asObservable();
+  constructor() { 
     
+  }
+  editExpense (newExpense){
+    this.expense.next(newExpense);
   }
   /********************************************** Start Get all Months, return array */
   getMonths(){
@@ -26,9 +31,7 @@ export class FirstPageService {
   }
   /********************************************** End Get all Months, return array */
   /********************************************** Start Get Total Expenses */
-  getTotalExpenses(){
-    return this.totalExpenses;
-  }//getTotalExpenses Function
+  
   /********************************************** End Get Total Expenses */
   /********************************************** Start Get All Months and Each Month Expenses As Object */
   getAllIcons():string[]{

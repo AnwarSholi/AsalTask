@@ -2,11 +2,12 @@
   <li *ngFor="let icon of allIconCategories; let i = index;">
     <a>
         <figure>
-          <img [src]="icon" alt="">
+          <img [src]="icon" alt="" class={{allTitleCategories[i]}}>
           <figcaption>{{allTitleCategories[i]}}</figcaption>
         </figure>
     </a>
   </li>
 </ul>
 <input type="text" hidden value="false" id="hiddenInput">
+<input type="text" hidden value="" id="hiddenInputSelectedValue">
 <div class="clearfix"></div>
