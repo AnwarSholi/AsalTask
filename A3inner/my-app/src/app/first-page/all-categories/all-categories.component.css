@@ -12,37 +12,48 @@ div {
 /* line 8, all-categories.component.scss */
 div.allCategories {
   padding: 0.9em;
+  padding-left: 3em;
+  padding-right: 3em;
+  background-color: whitesmoke;
+  border-bottom: 0.3em solid whitesmoke;
 }
 
-/* line 11, all-categories.component.scss */
+/* line 15, all-categories.component.scss */
+div.allCategories:nth-child(1) {
+  border-top: 2em solid whitesmoke;
+}
+
+/* line 18, all-categories.component.scss */
 div img {
   width: 10%;
 }
 
-/* line 15, all-categories.component.scss */
+/* line 21, all-categories.component.scss */
 div .description {
   width: 80%;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-/* line 18, all-categories.component.scss */
+/* line 26, all-categories.component.scss */
 div .description h5 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-/* line 23, all-categories.component.scss */
+/* line 31, all-categories.component.scss */
 div .description h5,
 div .description p {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* line 28, all-categories.component.scss */
+/* line 36, all-categories.component.scss */
 div span {
   width: 10%;
 }
 
-/* line 31, all-categories.component.scss */
+/* line 39, all-categories.component.scss */
 .one-line {
   display: block;
   float: left;

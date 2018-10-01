@@ -9,10 +9,24 @@ import { EachCategoryComponent } from './first-page/each-category/each-category.
 import { FooterOptionsComponent } from './first-page/footer-options/footer-options.component';
 import { HeaderMonthNamesComponent } from './first-page/header-month-names/header-month-names.component';
 import { TotalExpensesComponent } from './first-page/total-expenses/total-expenses.component'
+import { RouterModule, Routes } from '@angular/router';
 
 import { FirstPageService } from './service/first-page.service'
 import {HttpClientModule} from '@angular/common/http';
 
+import { AllCategoriesCalculateComponent } from './add-expenses/all-categories-calculate/all-categories-calculate.component';
+import { ButtonExpensesComponent } from './add-expenses/button-expenses/button-expenses.component';
+import { InputExpensesComponent } from './add-expenses/input-expenses/input-expenses.component';
+import { KeypadComponent } from './add-expenses/keypad/keypad.component';
+import { TitleCloseComponent } from './add-expenses/title-close/title-close.component';
+import { AllComponentsComponent } from './add-expenses/all-components/all-components.component'
+
+const appRoutes = [
+  {path:'home', component:HeaderMonthNamesComponent},
+  {path:'addExpenses', component: AllComponentsComponent},
+  {path:'', redirectTo: '/home', pathMatch: 'full'},
+  {path:'**', redirectTo:'/home', pathMatch:'full'}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,11 +35,18 @@ import {HttpClientModule} from '@angular/common/http';
     EachCategoryComponent,
     FooterOptionsComponent,
     HeaderMonthNamesComponent,
-    TotalExpensesComponent
+    TotalExpensesComponent,
+    AllCategoriesCalculateComponent,
+    ButtonExpensesComponent,
+    InputExpensesComponent,
+    KeypadComponent,
+    TitleCloseComponent,
+    AllComponentsComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [FirstPageService],
   bootstrap: [AppComponent]

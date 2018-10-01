@@ -1,7 +1,9 @@
 <nav class="bottom-nav fixed-bottom">
   <ul>
-    <li *ngFor="let icon of allImages">
-      <img [src]="icon" alt="icon">
+    <li *ngFor="let icon of allImages; let i=index;">
+      <a routerLink={{allRouterLinks[i]}}>
+        <img [src]="icon" alt="icon">
+      </a> 
     </li>
   </ul>
 </nav>

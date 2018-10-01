@@ -28,7 +28,7 @@ export class ChartComponent implements OnInit {
         let dataPoints = [];
         let dpsLength = 0;
         let chart = new CanvasJS.Chart(myMonths[i],{
-          height:150,
+          height:145,
           axisX: {
             lineColor: "#D6D6DE",
             lineThickness: 3,

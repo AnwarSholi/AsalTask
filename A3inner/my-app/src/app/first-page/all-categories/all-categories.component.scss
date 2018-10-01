@@ -7,13 +7,21 @@ div {
 }
 div.allCategories {
     padding: 0.9em;
+    padding-left:3em;
+    padding-right: 3em;
+    background-color: whitesmoke;
+    border-bottom: 0.3em solid whitesmoke;
+}
+div.allCategories:nth-child(1){
+    border-top: 2em solid whitesmoke;
 }
 div img {
     width: 10%;
-
 }
 div .description {
     width: 80%;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 div .description h5 {
 

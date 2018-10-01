@@ -67,6 +67,15 @@ export class FirstPageService {
       "$100"
     ];
   }
+  getAllRouterLinks():string[]{
+    return [
+      "/home",
+      "/home",
+      "/addExpenses",
+      "/home",
+      "/home"
+    ];
+  }
   getAllMonthsExpenses(){
     return {
       Jan:[

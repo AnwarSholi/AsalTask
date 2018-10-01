@@ -7,12 +7,13 @@ import { FirstPageService } from '../../service/first-page.service';
 })
 export class FooterOptionsComponent implements OnInit {
   allImages:string[];
+  allRouterLinks:string[];
   private service:FirstPageService = new FirstPageService(0);
   constructor() { }
 
   ngOnInit() {
     this.allImages=this.service.getAllIcons();
-    console.log(this.allImages);
+    this.allRouterLinks=this.service.getAllRouterLinks();
   }
 
 }

@@ -42,7 +42,9 @@
         margin-bottom: 10px;
     }
     .carousel-inner {
-        height: 235px;
+        height: 209px;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     .gray-empty-div{
         width: 100%;
