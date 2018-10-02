@@ -10,7 +10,11 @@ export class HeaderMonthNamesComponent implements OnInit {
   months:string[];
  
   private service:FirstPageService = new FirstPageService();
+  
   constructor() { }
+  func(){
+    console.log("damn");
+  }
   ngOnInit() {
     var ts;
     var monthIndex;

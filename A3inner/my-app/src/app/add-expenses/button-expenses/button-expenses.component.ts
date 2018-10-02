@@ -6,7 +6,7 @@ import { FirstPageService } from '../../service/first-page.service';
   styleUrls: ['./button-expenses.component.css']
 })
 export class ButtonExpensesComponent implements OnInit {
-  expense:string;
+  expense:string[];
   constructor(private expenseService:FirstPageService) { }
 
   ngOnInit() {
@@ -21,7 +21,10 @@ export class ButtonExpensesComponent implements OnInit {
     this.expense=expenseVar;
   }
   editTheExpense(){
-    this.expenseService.editExpense($('#expensesInput').val());
+    this.expenseService.editExpense([
+      $('#expensesInput').val(),
+      $('#hiddenInputSelectedValue').val()
+    ]);
   }
 
 }

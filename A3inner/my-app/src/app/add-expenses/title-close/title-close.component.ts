@@ -12,8 +12,9 @@ export class TitleCloseComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function(){
       $('#close').on('click',function(){
-        console.log("hey");
-        //location.reload();
+        //window.location.href+="?value='hello'";
+        console.log("location "+window.location.href);
+        
       });
     });
   }

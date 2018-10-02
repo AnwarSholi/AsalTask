@@ -9,7 +9,7 @@ export enum Months {
 })
 export class FirstPageService {
   
-  private expense = new BehaviorSubject<string>('hello');
+  private expense = new BehaviorSubject<string[]>(['hello','category']);
   cast = this.expense.asObservable();
   constructor() { 
     

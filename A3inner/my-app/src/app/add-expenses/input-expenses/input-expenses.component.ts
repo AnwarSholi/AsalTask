@@ -7,12 +7,10 @@ import { FirstPageService } from '../../service/first-page.service';
   styleUrls: ['./input-expenses.component.css']
 })
 export class InputExpensesComponent implements OnInit {
-  editExpense:string;
+  
   constructor(private expenseService:FirstPageService) { }
 
   ngOnInit() {
   }
-  editTheExpense(){
-    this.expenseService.editExpense(this.editExpense);
-  }
+  
 }
