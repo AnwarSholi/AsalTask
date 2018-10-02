@@ -20,17 +20,17 @@ div.allCategories {
 
 /* line 15, all-categories.component.scss */
 div.allCategories:nth-child(1) {
-  border-top: 2em solid whitesmoke;
+  border-top: 1em solid whitesmoke;
 }
 
 /* line 18, all-categories.component.scss */
 div img {
-  width: 10%;
+  width: 15%;
 }
 
 /* line 21, all-categories.component.scss */
 div .description {
-  width: 80%;
+  width: 70%;
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -50,13 +50,24 @@ div .description p {
 
 /* line 36, all-categories.component.scss */
 div span {
-  width: 10%;
+  width: 15%;
 }
 
 /* line 39, all-categories.component.scss */
 .one-line {
   display: block;
   float: left;
+}
+
+/* line 43, all-categories.component.scss */
+.each-expense {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  background-color: #d8f5fd;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=all-categories.component.css.map */

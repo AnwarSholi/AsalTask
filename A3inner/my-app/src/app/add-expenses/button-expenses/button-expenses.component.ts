@@ -7,23 +7,23 @@ import { FirstPageService } from '../../service/first-page.service';
 })
 export class ButtonExpensesComponent implements OnInit {
   expense:string[];
+  str:string;
   constructor(private expenseService:FirstPageService) { }
 
   ngOnInit() {
     var expenseVar;
-    this.expenseService.cast.subscribe(expense=>this.expense=expense);
-    $(document).ready(function(){
-      $('#addExpensesButton').on('click', function(){
-        expenseVar=$('#addExpensesButton').val();
-        console.log($('#hiddenInputSelectedValue').val());
-      });
+    this.expenseService.cast.subscribe(expense=>{
+      this.expense=expense;
+      console.log("hello girl: "+this.expense);
     });
-    this.expense=expenseVar;
   }
-  editTheExpense(){
+  
+  editTheExpense(event){
+ 
     this.expenseService.editExpense([
       $('#expensesInput').val(),
-      $('#hiddenInputSelectedValue').val()
+      $('#hiddenInputSelectedValue').val(),
+      $('#passArray').val()
     ]);
   }
 

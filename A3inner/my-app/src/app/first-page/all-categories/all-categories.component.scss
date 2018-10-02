@@ -13,13 +13,13 @@ div.allCategories {
     border-bottom: 0.3em solid whitesmoke;
 }
 div.allCategories:nth-child(1){
-    border-top: 2em solid whitesmoke;
+    border-top: 1em solid whitesmoke;
 }
 div img {
-    width: 10%;
+    width: 15%;
 }
 div .description {
-    width: 80%;
+    width: 70%;
     padding-left: 2em;
     padding-right: 2em;
 }
@@ -34,10 +34,18 @@ div .description p{
     margin: 0 !important;
 }
 div span {
-    width: 10%;
+    width: 15%;
 }
 .one-line {
     display: block;
     float: left;
-
+}
+.each-expense{
+    padding-left:0.5em;
+    padding-right:0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    background-color:rgb(216, 245, 253);
+    text-align: center;
+    font-size: 1.5em;
 }

@@ -27,6 +27,7 @@ export class KeypadComponent implements OnInit {
             amount = amount.substring(0, (amount.length - 1));
             amount=amount.trim();
             $('#expensesInput').val(amount);
+            
           }
         }
       });

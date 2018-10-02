@@ -1,19 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import {Observable, BehaviorSubject} from 'rxjs';
-export enum Months {
-                            January, February, March, April, May, June, 
-                            July, August, September, October, November, December
-                          };
+export enum Months  {
+                      January, February, March, April, May, June, 
+                      July, August, September, October, November, December
+                    };
 @Injectable({
   providedIn: 'root'
 })
 export class FirstPageService {
-  
-  private expense = new BehaviorSubject<string[]>(['hello','category']);
+  //private arrayOfAllExpenses:string[];
+  private expense = new BehaviorSubject<string[]>(['$0','category', '$100,$200,$500,$100,$100']);
   cast = this.expense.asObservable();
   constructor() { 
-    
+    //this.arrayOfAllExpenses = this.getAllExpenses();
   }
+  
   editExpense (newExpense){
     this.expense.next(newExpense);
   }
